@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS Альбом (
 );
 
 
-CREATE TABLE IF NOT EXISTS Альбом исполнителя (
+CREATE TABLE IF NOT EXISTS АльбомИсполнителя (
 	Альбом_id INTEGER REFERENCES Альбом(id),
 	Исполнитель_id INTEGER REFERENCES Исполнитель(id),
 	CONSTRAINT pk_АльбомИсполнителя PRIMARY KEY (Альбом_id, Исполнитель_id)
